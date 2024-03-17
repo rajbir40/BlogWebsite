@@ -1,0 +1,66 @@
+.delete, .update{
+    cursor: pointer;
+    padding:10px 20px;
+    background-color: #F0EDCF;
+    margin-bottom:10px;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+#yes, #no{
+    cursor: pointer;
+    padding:10px 20px;
+    background-color: #222831;
+    color: white;
+    margin-bottom:10px;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+#prompt{
+    background-color: #F0EDCF;
+    width:70vw;
+    position: absolute;
+    top:50%;
+    padding:30px;
+    left:calc(50% - 35vw);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2rem;
+}
+#prompt div{
+    width:100%;
+}
+#updated{
+    flex-direction: column;
+    justify-content: start;
+}
+#updated-title, #updated-content{
+    display: none;
+    resize: none;
+    font-size: 1.25rem;
+    margin:10px 0px;
+    width:100%;
+    padding: 10px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#updated-title::placeholder , #updated-content::placeholder {
+    text-align: left;
+    padding-top: 1%;
+    padding-left: 2%;
+}
+#updated-content{
+    height: 35vh;
+}
+#button{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}

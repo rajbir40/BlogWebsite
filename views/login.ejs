@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <form id="form" action="/login" method="post">
+                <div class="heading">
+                    <h1 id="namefield">Log In</h1>
+                </div>
+                <div class="input1" id="input2">
+                    <input class="input" type="text" placeholder="Enter Your Email" id="email" name="email">
+                </div>
+                <div class="input1" id="input3">
+                    <input class="input" type="text" placeholder="Enter Your Password" id="password" name="password">
+                </div>
+                <div class="footer">
+                    <div class="password">
+                        <p id="pass">
+                            <%= data.issue %>
+                        </p>
+                    </div>
+                    <div class="buttons">
+                        <input type="submit" class="btn btn1" value="LogIn">
+                        <button class="btn btn2"><a href="/signup">SignUp</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/javascripts/login.js"></script>
+</body>
+
+</html>

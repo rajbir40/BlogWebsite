@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/update.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li class="items" id="item-2"><a href="/index">Home</a></li>
+                <li class="items" id="item-3"><a href="/create">Create Your Blog</a></li>
+                <li class="items" id="item-4"><a href="/update">Update and Delete Your Blogs</a></li>
+            </ul>
+        </nav>
+        <div class="articles">
+            <div class="article-description">
+                <h1 id="featured-articles">Your Articles</h1>
+            </div>
+            <% for(i = data.allBlogs.length-1; i >= 0; i--){ %>
+            <div class="article" id="article1">
+                <div class="right1">
+                    <img class="article-image" src="/images/article.png" alt="">
+                </div>
+                <div class="left1">
+                    <h1 class="blog-topic"><a href="#"><%= data.allBlogs[i].title %></a></h1>
+                    <button class="delete">Delete</button>
+                    <button class="update">Update</button>
+                    <p><%= data.allBlogs[i].content %></p>
+                    <div class="article-bottom">
+                        <span id="name">Author Name - <%= data.allBlogs[i].name %></span>
+                        <span id="date">Date : <%= data.allBlogs[i].time %></span>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+        </div>
+        <div id="prompt">
+            <div id="updated">
+                <textarea name="title" id="updated-title" placeholder="Title"></textarea>
+                <textarea name="content" id="updated-content" placeholder="Write your Blog"></textarea>
+            </div>
+            <div id="button">
+                <button id="yes"></button>
+                <button id="no"></button>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/update.js"></script>
+</body>
+</html>

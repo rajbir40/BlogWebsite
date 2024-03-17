@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E; /* Changed background color to a darker shade */
+}
+
+.container {
+    height: 70vh;
+    width: 40vw;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid #F0EDCF; */
+    border-radius: 5vmin;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 10px 58px -20px #F0EDCF;
+}
+
+form {
+    width: 80%;
+    height: 90%;
+}
+
+.input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 2vmin;
+    background: transparent;
+    border: 2px #F0EDCF solid;
+    margin: 15px;
+    font-size: 1.25rem;
+    outline: none;
+    color: white;
+}
+
+.heading {
+    margin-top: 2vmin;
+    width: 100%;
+    color: #F0EDCF;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vmin;
+}
+
+.password {
+    width: 100%;
+}
+
+#pass {
+    margin-left: 8vmin;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+}
+
+#pass a {
+    text-decoration: none;
+    color: rgb(255, 201, 129);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 3vmin;
+}
+
+.btn {
+    padding: 1.5vmin 3vmin;
+    border: none;
+    border-radius: 0.5vmin;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    scale: 110%;
+}
+
+.btn2 {
+    background-color: #333; /* Changed background color of .btn2 */
+    color: white; /* Changed text color */
+}
+
+.btn2 a {
+    text-decoration: none;
+    color: #FFC479; /* Changed link color */
+}
+
+.btn1 {
+    background-color: #F0EDCF;
+    color: black;
+}
