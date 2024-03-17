@@ -6,5 +6,5 @@ Steps To Setup
 
 Submitted BY:-
 
-Name: Vansh Dhawan
-Enrollment Number: IIB2023033
+Name: Rajbir Singh
+Enrollment Number: IIT2023240
